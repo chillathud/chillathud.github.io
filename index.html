@@ -139,15 +139,20 @@
 
 
 
-
+      .basicButton {
+        padding:2px;
+        border-radius:5px;
+      } 
 
       h6 {
         background-color: rgba(76, 95, 42, 0.685);
         border: 15px dashed rgba(3, 15, 8, 0.719);
         font-family: Helvetica, sans-serif;
         font-size: medium;
-        margin-bottom: -20px;
-
+        margin-bottom: -34px;
+        margin-left:30px;
+        margin-right:30px;
+        
       }
 
       h6 a:link,
@@ -315,8 +320,16 @@ An active link is underlined and red-->
         <p style="font-size:16px; text-align:left;
                             margin-left:50px;
                             margin-bottom:0px; margin-right:50px;
-                            margin-top:0px;">Button as a Link: <button onclick="document.location='default.asp'">Link
-            Button</button>
+                            margin-top:0px;">Button as a Link: <a href="https://www.aaroncarter.com/"><button class = basicButton role="button"; >Link
+
+
+
+
+
+
+
+
+            Button</button></a>
           <pre>
             &lt;button onclick="document.location='default.asp'"&gt;Button Text&lt;button&gt;</pre>
         </p>
