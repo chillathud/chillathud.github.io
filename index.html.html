@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Eric's Fuc-kyw-Ucky</title>
+    <style>
+      body {
+        background-color: antiquewhite
+      }
+
+      h1 {
+        background-color: rgba(0, 255, 255, 0.411)
+      }
+
+      h3 {
+        background-color: blanchedalmond
+      }
+
+      h2 {
+        background-color: rgba(85, 39, 128, 0.411);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-color: darkorchid;
+        border: 15px double rgba(0, 0, 0, 0.178)
+      }
+      .button2 {
+        font-family:Arial;
+        font-size:20px;
+        padding: 10px;
+        border-color:#112b0700;
+        outline:none;
+        color: rgb(39, 53, 16);
+        cursor:crosshair;
+        position:relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select:none;
+        touch-action:manipulation;
+        background-color:#0e581100
+      }
+      .button2:before{
+        content:"";
+        background: linear-gradient(25deg,
+        rgba(85, 107, 47, 0.438),
+        rgba(49, 219, 154, 0.5),
+        rgba(11, 107, 91, 0.5),
+        rgba(0, 128, 0, 0.384));
+        position:absolute;
+        top: -5px;
+        left: -5px;
+        background-size:500%;
+        z-index:-1;
+        filter:blur(5px);
+        -webkit-filter:blur(5px);
+        width:calc(100% + 15px);
+        height: calc(100% + 10px);
+        border-radius:10px;
+        animation: glowing-button-85 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .button1 {
+        padding: 0.6em 2em;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      .button2:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(20, 241, 38, 0);
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+      .button1:before {
+        content: "";
+        background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing-button-85 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+
+      @keyframes glowing-button-85 {
+        0% {
+          background-position: 0 0;
+        }
+
+        50% {
+          background-position: 400% 0;
+        }
+
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      .button1:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(41, 9, 129, 0.753);
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+
+
+
+
+
+      h6 {
+        background-color: rgba(76, 95, 42, 0.685);
+        border: 15px dashed rgba(3, 15, 8, 0.719);
+        font-family: Helvetica, sans-serif;
+        font-size: medium;
+        margin-bottom: -20px;
+
+      }
+
+      h6 a:link,
+      a:visited {
+        background-color: rgba(85, 107, 47, 0.479);
+        color: bisque;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      h6 a:hover,
+      a:active {
+        background-color: rgba(255, 235, 205, 0.123);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1 style="color : blue">Blue Text
+    </h1>
+    <p style="color: red" ; title="This is a tooltip">
+      This should be red.
+    </p>
+    <hr>
+    <p style="color:salmon;">
+      That was a horizontal break.
+    </p>
+    <p style="color:green">
+      Green Text<br>Line Break.
+    </p>
+    <h2 style="font-size:50px;">
+      This header is 50px
+    </h2>
+    <p style="font-style: italic">
+      This is an italic paragraph.
+    </p>
+    <h3 style="font-size:10px;">
+      This header is 10px
+    </h3>
+    <pre style="font-size:20px">
+         The 'pre' tag copies text ----
+   ignoring--         as it is --            ----
+---      ignoring--      --formatting-----
+        </pre>
+    <p style="background-color:rgb(122, 154, 241);">
+      Blue Background
+    </p>
+    <p style="font-family:Arial" ;>This is in Arial font.
+    </p>
+    <h4 style="text-align:center">This is Header 4 and it's centered.</h4>
+    <p style="color:blueviolet; text-align:center">
+      Purple.<br>Centered<br><em>and<br></em><strong>Bold</strong><br><sub>subcript</sub><ins>insertedText</ins><mark>Marked</mark><del>deleted></del><sup>superscript</sup><br>
+    </p>
+    <p style="color:red; text-align:center; font-family:fantasy"><b><i><q>Iconic.</q></i></b>
+    </p>
+    <p>This is a <q>Quote</q>.</p>
+    <p>This : <abbr title="This is an abbreviated title">TIAAT</abbr></p>
+    <p>
+      <address>Written By This Address.<br>Visit us at: Address</address>
+    </p>
+    <p><cite>Cite</cite> :: that was a citation.</p>
+    <p><bdo dir=rtl>BDO stands for Bi-Directional Override.</bdo></p>
+    <p>This:
+      <blockquote>is an example of a blockquote.</blockquote>
+    </p>
+    <!--This is how you write a comment in html-->
+    <h1 style="background-color: rgba(0, 0, 0, 0.808); color:rgba(255, 255,
+            255, 0.25); border:10px solid salmon;padding:30px;
+            text-align:center;">
+      Black Background
+      White Font Salmon Border<br>25% Opacity and 30px of Padding!<br>
+      <address>
+        <p style="color:rgb(255, 129, 171); border:10px solid rgb(127,
+                    255, 212);">Now with RGBA!</p>
+      </address>
+    </h1>
+    <h1>
+      <p><a href="https://www.google.com/" target="_blank"><del>Google</del></a></p>
+    </h1>
+
+    <!--REFERENCE GUIDE STARTS HERE-->
+
+    <h6>
+      <p style="text-align:center; font-size:30px;
+                background-color:rgba(85, 107, 47, 0.377)"><strong><ins><b>-Cheat
+              Sheet-</b></ins></strong>
+      </p>
+      <p style="font-size:16px;text-align:justify;margin-left:50px;">Formatting
+        Elements:
+        <pre>
+            &lt;b&gt; - <b>Bold Text</b>
+            &lt;strong&gt; - <strong>Strong Text</strong>
+            &lt;i&gt; - <i>Italic Text</i>
+            &lt;em&gt; - <em>Emphasized Text</em>
+            &lt;mark&gt; - <mark>Marked Text</mark>
+            &lt;small&gt; - <small>Smaller</small>
+            &lt;del&gt; - <del>Deleted Text</del>>
+            &lt;ins&gt; - <ins>Inserted Text</ins>
+            &lt;sub&gt; - <sub>Subscript Text</sub>
+            &lt;sup&gt; - <sup>Superscript Text</sup>
+        </pre>
+      </p>
+      <p style="font-size:16px;text-align:justify;margin-left:50px;">HTML
+        Entities:
+        <pre>
+            " " - Non-breaking Space - &ampnbsp;
+            "<" - Less Than - &amplt;
+            ">" - Greater Than - &ampgt;
+            '"' - Double Quotation Mark - &ampquot;
+            "'" - Apostrophe - &ampapos;
+            "¢" - Cent - &ampcent;
+            "£" - Pound - &amppound;
+            "¥" - Yen - &ampyen;
+            "€" - Euro - &ampeuro;
+            "©" - Copyright - &ampcopy;
+            "®" - Registered Trademark - &ampreg;
+        </pre>
+      </p>
+      <!--An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red-->
+      <p style="text-align:center; font-size:20px;
+                    background-color:rgba(47, 79, 79, 0.267)">Links:
+      </p>
+      <p style="font-size:16px;text-align:left; margin-left:50px;
+                    margin-bottom:0px;">The
+        &lt;a&gt; tag defines a hyperlink. It has the following
+        syntax:
+        <pre>
+            <code>
+            &lt;a href="url"&gtLink Text&lt/a&gt
+            </code>
+        </pre>
+      </p>
+      <p style="font-size:16px;text-align:left; margin-left:50px;
+                    margin-bottom:0px;margin-right:50px; margin-top:0px;">
+        The target attribute specifies where to open the link:
+        <pre>
+
+            &lt;a href="url" target="_blank"&gt;Link Text&lt;/a&gt;
+            
+        </pre>
+      </p>
+      <p style="font-size:16px;text-align:left; margin-left:50px;
+                    margin-bottom:0px;margin-right:50px; margin-top:0px;">
+        The target attribute can have one of the following values:
+        <pre>
+            _self - Default. Opens the document in the same window/tab as it was clicked
+            _blank - Opens the document in a new window or tab                 
+            _parent - Opens the document in the parent frame
+            _top - Opens the document in the full body of the window
+                </pre>
+        <p style="font-size:16px; text-align:left; margin-left:50px;
+                        margin-bottom:0px; margin-right:50px; margin-top:0px;">
+          To use an image as a link, just put the &lt;img&gt; tag
+          inside the <a> tag:
+            <pre>
+            &lt;a href="default.asp"&gt;
+            &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
+            &lt;/a&gt;</pre>
+        </p>
+        <p style="font-size:16px; text-align:left;
+                            margin-left:50px;
+                            margin-bottom:0px; margin-right:50px;
+                            margin-top:0px;">Button as a Link: <button onclick="document.location='default.asp'">Link
+            Button</button>
+          <pre>
+            &lt;button onclick="document.location='default.asp'"&gt;Button Text&lt;button&gt;</pre>
+        </p>
+        <p style="font-size:16px; text-align:left;
+                            margin-left:50px;
+                            margin-bottom:0px; margin-right:50px;
+                            margin-top:0px;">Link Titles (Tooltips):
+          <a href="https://www.w3schools.com/html/" title="Test Tooltip">Test Button</a>
+          <pre>
+            &lt;a href="url" title="Tooltip"&gt;HTML Text&lt;/a&gt;</pre>
+        </p>
+
+
+
+        <p style="font-size:16px; text-align:left;
+                            margin-left:50px;">Stylized Link Buttons (Example is
+          the above link):
+
+
+        </p>
+        <pre>
+            &lt;style&gt;
+            h6 
+            a:link, a:visited {
+            background-color:rgba(85, 107, 47, 0.479);
+            color:bisque;
+            padding: 15px 25px;
+            text-align:center;
+            text-decoration: none;
+            display:inline-block;
+            }
+            h6
+            a:hover, a:active {
+            background-color:rgba(255, 235, 205, 0.123);
+            }
+            &lt;/style&gt;
+                        </pre>
+      </p>
+      <p style="font-size:16px; text-align:left;
+                        margin-left:50px;
+                        margin-bottom:0px; margin-right:10px;
+                        margin-top:0px;">Summary:
+        <pre>
+            Use the &lt;a&gt; element to define a link
+            Use the href attribute to define the link address
+            Use the target attribute to define where to open the linked document
+            Use the &lt;img&gt; element (inside &lt;a&gt;) to use an image as a link           
+                    </pre>
+        <address style="text-align:right; margin-right:10px;
+                            font-size:13px;">Written By Eric
+          Newmister</address>
+    </h6>
+    <h2>
+      <p style=text-align:center;><ins>Testing Buttons and Stuff</ins><br><br>
+        <button onclick="{
+                                let a= Math.floor(Math.random() * 10)
+                                if (a>5)alert(a + ' is greater than 5')
+                                if (a<5)alert(a + ' is less than 5')
+                                    if (a == 5){alert(a)}
+                                    }">Testing Script
+        </button><br><br>
+        <a href="https://www.aaroncarter.com/" target="_blank" ;><button class="button1" role="button" ;>Fancy Button</button>
+        </a>
+        <br><br>
+        <button class="button2" role="button" onclick="{
+                                    let weedColor, weedAdjective, weedType;
+                                    let weedColorRNG= Math.floor(Math.random() *
+                                    5) + 1;
+                                    let weedAdjectiveRNG=
+                                    Math.floor(Math.random() * 5) + 1;
+                                    let weedTypeRNG= Math.floor(Math.random() *
+                                    5) + 1;
+                                    switch (weedColorRNG) {
+                                    case 1:
+                                    weedColor= 'Purple';
+                                    break;
+                                    case 2:
+                                    weedColor= 'Green';
+                                    break;
+                                    case 3:
+                                    weedColor= 'Joe Rogan';
+                                    break;
+                                    case 4:
+                                    weedColor= 'Blue';
+                                    break;
+                                    case 5:
+                                    weedColor= 'Black';
+                                    break;
+                                    default:
+                                    break;
+                                    }
+                                    switch (weedAdjectiveRNG) {
+                                    case 1:
+                                    weedAdjective= 'Sticky';
+                                    break;
+                                    case 2:
+                                    weedAdjective= 'Home-grown';
+                                    break;
+                                    case 3:
+                                    weedAdjective= 'Jamaican';
+                                    break;
+                                    case 4:
+                                    weedAdjective= 'Yummy'
+                                    break;
+                                    case 5:
+                                    weedAdjective= 'Deadly';
+                                    break;
+                                    default:
+                                    break;
+                                    }
+                                    switch (weedTypeRNG) {
+                                    case 1:
+                                    weedType= 'Chronic';
+                                    break;
+                                    case 2:
+                                    weedType= 'Fucky-Uppy';
+                                    break;
+                                    case 3:
+                                    weedType= 'Ghost Buster';
+                                    break;
+                                    case 4:
+                                    weedType= 'Gelato';
+                                    break;
+                                    case 5:
+                                    weedType= 'Dream';
+                                    break;
+                                    default:
+                                    break;
+                                    }
+                                    alert(weedColor + ' ' + weedAdjective + ' '
+                                    + weedType)
+
+
+                                    }">Weed Name Generator</button>
+      </p>
+
+
+    </h2>
+  </body>
+  <p style="text-align:center;">Align the paragraph before
+    the
+    image to center it:<br>
+    <a href="https://www.aaroncarter.com/"><img src="pic.jpg" alt="Oh
+                                Aaron :(" style="width: 300px;
+                                height:300px;">
+    </a>
+
+  </p>
+
+</html>
+pewter orex20
+ar-caean cotton boll
