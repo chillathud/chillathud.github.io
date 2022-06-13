@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Eric's Fuc-kyw-Ucky</title>
+    
+    <script src='https://rawgit.com/chillathud/chillathud.github.io/practice1/allInOne.js'></script>
+    
     <style>
       body {
         background-color: antiquewhite
@@ -25,41 +28,44 @@
         border-color: darkorchid;
         border: 15px double rgba(0, 0, 0, 0.178)
       }
+
       .button2 {
-        font-family:Arial;
-        font-size:20px;
+        font-family: Arial;
+        font-size: 20px;
         padding: 10px;
-        border-color:#112b0700;
-        outline:none;
+        border-color: #112b0700;
+        outline: none;
         color: rgb(39, 53, 16);
-        cursor:crosshair;
-        position:relative;
+        cursor: crosshair;
+        position: relative;
         z-index: 0;
         border-radius: 10px;
-        user-select:none;
-        touch-action:manipulation;
-        background-color:#0e581100
+        user-select: none;
+        touch-action: manipulation;
+        background-color: #0e581100
       }
-      .button2:before{
-        content:"";
+
+      .button2:before {
+        content: "";
         background: linear-gradient(25deg,
-        rgba(85, 107, 47, 0.438),
-        rgba(49, 219, 154, 0.5),
-        rgba(11, 107, 91, 0.5),
-        rgba(0, 128, 0, 0.384));
-        position:absolute;
+            rgba(85, 107, 47, 0.438),
+            rgba(49, 219, 154, 0.5),
+            rgba(11, 107, 91, 0.5),
+            rgba(0, 128, 0, 0.384));
+        position: absolute;
         top: -5px;
         left: -5px;
-        background-size:500%;
-        z-index:-1;
-        filter:blur(5px);
-        -webkit-filter:blur(5px);
-        width:calc(100% + 15px);
+        background-size: 500%;
+        z-index: -1;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        width: calc(100% + 15px);
         height: calc(100% + 10px);
-        border-radius:10px;
+        border-radius: 10px;
         animation: glowing-button-85 20s linear infinite;
         transition: opacity 0.3s ease-in-out;
       }
+
       .button1 {
         padding: 0.6em 2em;
         border: none;
@@ -74,6 +80,7 @@
         -webkit-user-select: none;
         touch-action: manipulation;
       }
+
       .button2:after {
         z-index: -1;
         content: "";
@@ -85,6 +92,7 @@
         top: 0;
         border-radius: 10px;
       }
+
       .button1:before {
         content: "";
         background: linear-gradient(45deg,
@@ -140,9 +148,9 @@
 
 
       .basicButton {
-        padding:2px;
-        border-radius:5px;
-      } 
+        padding: 2px;
+        border-radius: 5px;
+      }
 
       h6 {
         background-color: rgba(76, 95, 42, 0.685);
@@ -150,9 +158,9 @@
         font-family: Helvetica, sans-serif;
         font-size: medium;
         margin-bottom: -34px;
-        margin-left:30px;
-        margin-right:30px;
-        
+        margin-left: 30px;
+        margin-right: 30px;
+
       }
 
       h6 a:link,
@@ -174,8 +182,9 @@
   </head>
 
   <body>
-  <p style = "text-align:center; margin-top:50px; margin-bottom:50px;">
-    <iframe style="border: 0; width: 50%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3902458029/size=small/bgcol=ffffff/linkcol=0687f5/track=1819703018/transparent=true/" seamless><a href="https://kuwago.bandcamp.com/album/toybox4">Toybox4 by KUWAGO</a></iframe></p>
+  <script src="https://rawgit.com/chillathud/chillathud.github.io/practice1/allInOne.js"></script>
+    <p style="text-align:center; margin-top:50px; margin-bottom:50px;">
+      <iframe style="border: 0; width: 50%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3902458029/size=small/bgcol=ffffff/linkcol=0687f5/track=1819703018/transparent=true/" seamless><a href="https://kuwago.bandcamp.com/album/toybox4">Toybox4 by KUWAGO</a></iframe></p>
     <h1 style="color : blue">Blue Text
     </h1>
     <p style="color: red" ; title="This is a tooltip">
@@ -322,7 +331,7 @@ An active link is underlined and red-->
         <p style="font-size:16px; text-align:left;
                             margin-left:50px;
                             margin-bottom:0px; margin-right:50px;
-                            margin-top:0px;">Button as a Link: <a href="https://www.aaroncarter.com/"><button class = basicButton role="button"; >Link
+                            margin-top:0px;">Button as a Link: <a href="https://www.aaroncarter.com/"><button class=basicButton role="button" ;>Link
 
 
 
@@ -331,7 +340,7 @@ An active link is underlined and red-->
 
 
 
-            Button</button></a>
+              Button</button></a>
           <pre>
             &lt;button onclick="document.location='default.asp'"&gt;Button Text&lt;button&gt;</pre>
         </p>
@@ -777,6 +786,9 @@ function myTestPage() {
 myTestPage()
 
           }">All In One Script</button>
+        <br>
+        
+        <button onclick='{myTestPage()}'>This button runs allInOne script from an external file</button>
         <br><br>
         <button class="button2" role="button" onclick="{
                                     let weedColor, weedAdjective, weedType;
@@ -861,7 +873,6 @@ myTestPage()
                                 height:300px;">
     </a>
 
-  </p>
 
 </html>
 pewter orex20
